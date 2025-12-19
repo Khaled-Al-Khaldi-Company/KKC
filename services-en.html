@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Khaled Hamad Al-Khalidi Contracting</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        body {
+            font-family: var(--font-en);
+            direction: ltr;
+        }
+
+        .page-header {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+
+        .service-detail {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-xl);
+            padding-bottom: var(--spacing-lg);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .service-detail:last-child {
+            border-bottom: none;
+        }
+
+        .service-detail:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .service-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .service-image-placeholder {
+            flex: 1;
+            height: 300px;
+            background-color: #eee;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+
+            .service-detail,
+            .service-detail:nth-child(even) {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .service-text {
+                text-align: center;
+            }
+
+            .service-image-placeholder {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span style="color:var(--color-secondary)">KKC</span> Contracting
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="about-en.html">About Us</a></li>
+                    <li><a href="services-en.html" class="active">Services</a></li>
+                    <li><a href="projects-en.html">Projects</a></li>
+                    <li><a href="contact-en.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="services.html" class="lang-switch">عربي</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services & Sectors</h1>
+            <p style="opacity: 0.8;">Integrated solutions serving your needs</p>
+        </div>
+    </section>
+
+    <!-- Services List -->
+    <section style="padding: var(--spacing-xl) 0;">
+        <div class="container">
+
+            <!-- Service 1 -->
+            <div class="service-detail">
+                <div class="service-text">
+                    <h2>General Contracting</h2>
+                    <p>We execute all construction works for governmental, commercial, and residential buildings. This
+                        includes civil, electrical, and mechanical works, with full commitment to technical
+                        specifications and time schedules.</p>
+                    <ul style="margin-top: 15px; list-style: disc; margin-left: 20px; color: var(--color-text-light);">
+                        <li>Construction of buildings and towers</li>
+                        <li>Infrastructure works</li>
+                        <li>Interior and exterior finishing</li>
+                    </ul>
+                </div>
+                <div class="service-image-placeholder">Contracting Image</div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-detail">
+                <div class="service-text">
+                    <h2>Operation & Maintenance</h2>
+                    <p>We offer comprehensive operation and maintenance contracts for public and private facilities. Our
+                        specialized team ensures the sustainability of systems with high efficiency and minimal
+                        downtime.</p>
+                    <ul style="margin-top: 15px; list-style: disc; margin-left: 20px; color: var(--color-text-light);">
+                        <li>Maintenance of electrical and mechanical systems</li>
+                        <li>Cleaning and sterilization services</li>
+                        <li>Facility management</li>
+                    </ul>
+                </div>
+                <div class="service-image-placeholder">Maintenance Image</div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-detail">
+                <div class="service-text">
+                    <h2>Real Estate Development</h2>
+                    <p>We invest our expertise in developing real estate projects (residential and commercial) that meet
+                        the needs of the Saudi market, focusing on modern designs and construction quality to ensure
+                        rewarding investment returns and comfort for beneficiaries.</p>
+                </div>
+                <div class="service-image-placeholder">Real Estate Image</div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-detail">
+                <div class="service-text">
+                    <h2>Greenhouses & Prefabricated Houses</h2>
+                    <p>We specialize in the design and installation of agricultural greenhouses using the latest
+                        technologies to increase agricultural production. We also offer prefab solutions for temporary
+                        offices, workers' accommodation, and residential annexes with standard execution speed.</p>
+                </div>
+                <div class="service-image-placeholder">Prefab Image</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About KKC</h3>
+                    <p style="color: #ccc; font-size: 0.9rem;">
+                        Khaled Hamad Al-Khalidi Contracting (KKC) is a leading Saudi company in Construction and O&M.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index-en.html">Home</a></li>
+                        <li><a href="about-en.html">About Us</a></li>
+                        <li><a href="services-en.html">Services</a></li>
+                        <li><a href="contact-en.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul style="color: #ccc; font-size: 0.9rem;">
+                        <li>📍 Olaya - Riyadh - KSA</li>
+                        <li>📞 Phone: 920000000</li>
+                        <li>✉️ Email: info@kke.bz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Khaled Hamad Al-Khalidi Contracting. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

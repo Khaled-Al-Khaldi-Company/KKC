@@ -1,0 +1,189 @@
+/* ========================================
+   New Additions for Premium Feel
+   ======================================== */
+
+/* Features Grid (About Section Replacement) */
+.features-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.feature-card-item {
+    background: var(--color-bg-light);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: transform var(--transition-normal);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.feature-card-item:hover {
+    transform: translateY(-5px);
+    background: var(--color-white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon-box {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-card-item h4 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 700;
+}
+
+.feature-card-item p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin: 0;
+}
+
+/* Clients Marquee (Auto Scroll) */
+.clients-section-marquee {
+    padding: var(--spacing-2xl) 0;
+    overflow: hidden;
+    background: var(--color-white);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
+    display: inline-flex;
+    animation: scroll 30s linear infinite;
+    gap: var(--spacing-2xl);
+    padding: var(--spacing-lg) 0;
+}
+
+.marquee-item {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-light);
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    padding: 0 var(--spacing-lg);
+}
+
+.marquee-item:hover {
+    opacity: 1;
+    color: var(--color-primary);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50% - var(--spacing-xl)));
+    }
+}
+
+/* Process Timeline (How We Work) */
+.process-section {
+    padding: var(--spacing-2xl) 0;
+    background: linear-gradient(to bottom, var(--color-bg-lighter), #fff);
+}
+
+.process-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) 0;
+}
+
+.process-step {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    padding: 0 var(--spacing-md);
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0 auto var(--spacing-md);
+    box-shadow: 0 10px 20px rgba(0, 182, 122, 0.15);
+    border: 3px solid var(--color-secondary);
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover .step-icon {
+    transform: scale(1.1);
+    background: var(--color-secondary);
+}
+
+.process-step h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.process-step p {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+}
+
+.step-connector {
+    flex: 1;
+    height: 3px;
+    background: rgba(0, 182, 122, 0.2);
+    margin-top: 40px;
+    position: relative;
+}
+
+.step-connector::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--color-secondary);
+    transform: translateY(-50%);
+    animation: fillLine 2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fillLine {
+    to {
+        width: 100%;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .process-timeline {
+        flex-direction: column;
+        gap: var(--spacing-xl);
+    }
+
+    .step-connector {
+        display: none;
+    }
+
+    .marquee-track {
+        animation-duration: 15s;
+    }
+}

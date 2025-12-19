@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaled Hamad Al-Khalidi Contracting | KKC</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        body {
+            font-family: var(--font-en);
+            direction: ltr;
+            /* Override global rtl */
+        }
+
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(21, 44, 91, 0.8), rgba(21, 44, 91, 0.6)), url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            color: var(--color-white);
+            font-size: 3.5rem;
+            margin-bottom: var(--spacing-md);
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto var(--spacing-lg);
+            opacity: 0.9;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .service-card {
+            background: var(--color-white);
+            padding: var(--spacing-lg);
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-fast);
+            border-bottom: 3px solid transparent;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-bottom-color: var(--color-secondary);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--color-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        /* Mirror utility for LTR */
+        .nav-links {
+            margin-left: auto;
+            /* Push to right in LTR? No, space-between handles it */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span style="color:var(--color-secondary)">KKC</span> contracting
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index-en.html" class="active">Home</a></li>
+                    <li><a href="about-en.html">About Us</a></li>
+                    <li><a href="services-en.html">Services</a></li>
+                    <li><a href="projects-en.html">Projects</a></li>
+                    <li><a href="contact-en.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="index.html" class="lang-switch">عربي</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Building the Future<br><span style="color:var(--color-secondary)">With Global Standards</span></h1>
+            <p>Your strategic partner in General Contracting, Real Estate, and Operation & Maintenance. Commited to
+                Quality and Innovation.</p>
+            <div>
+                <a href="services-en.html" class="btn btn-primary"
+                    style="background-color: var(--color-secondary); color: var(--color-primary);">Our Services</a>
+                <a href="contact-en.html" class="btn btn-secondary"
+                    style="background-color: transparent; border: 2px solid var(--color-white); color: var(--color-white); margin-right: 10px;">Contact
+                    Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Summary -->
+    <section style="padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <div class="section-title">About Us</div>
+            <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+                <p style="font-size: 1.1rem; color: var(--color-text-light); margin-bottom: var(--spacing-lg);">
+                    Khaled Hamad Al-Khalidi Contracting (KKC) was established to be a leader in the construction sector
+                    in Saudi Arabia. With our professional team and extensive experience, we offer integrated solutions
+                    including General Contracting, O&M, Real Estate Development, and Prefabricated structures.
+                </p>
+                <a href="about-en.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section style="background-color: var(--color-bg-light); padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <div class="section-title">Our Sectors</div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-card-img" style="background-image: url('assets/images/service-contracting.jpg');"></div>
+                    <div class="service-card-content">
+                        <h3>General Contracting</h3>
+                        <p>Executing governmental and private construction projects with highest quality engineering standards.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-card-img" style="background-image: url('assets/images/service-maintenance.jpg');"></div>
+                    <div class="service-card-content">
+                        <h3>Operation & Maintenance</h3>
+                        <p>Comprehensive maintenance services ensuring facility continuity and efficiency.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-card-img" style="background-image: url('assets/images/service-realestate.jpg');"></div>
+                    <div class="service-card-content">
+                        <h3>Real Estate</h3>
+                        <p>Innovative real estate solutions and residential projects keeping up with urban development.</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-card-img" style="background-image: url('assets/images/service-greenhouse.jpg');"></div>
+                    <div class="service-card-content">
+                        <h3>Greenhouses & Prefab</h3>
+                        <p>Design and installation of agricultural greenhouses and ready-made houses efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+        style="background-color: var(--color-primary); color: var(--color-white); padding: var(--spacing-xl) 0; text-align: center;">
+        <div class="container">
+            <h2 style="color: var(--color-white); margin-bottom: var(--spacing-md);">Ready to start your project?</h2>
+            <p style="margin-bottom: var(--spacing-lg); opacity: 0.9;">Our engineering team is ready to provide
+                consultation and technical study.</p>
+            <a href="contact-en.html" class="btn btn-primary"
+                style="background-color: var(--color-secondary); color: var(--color-primary);">Get a Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About KKC</h3>
+                    <p style="color: #ccc; font-size: 0.9rem;">
+                        Khaled Hamad Al-Khalidi Contracting (KKC) is a leading Saudi company in Construction and O&M,
+                        committed to Vision 2030.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index-en.html">Home</a></li>
+                        <li><a href="about-en.html">About Us</a></li>
+                        <li><a href="services-en.html">Services</a></li>
+                        <li><a href="contact-en.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul style="color: #ccc; font-size: 0.9rem;">
+                        <li>📍 Olaya - Riyadh - KSA</li>
+                        <li>📞 Phone: 920000000</li>
+                        <li>✉️ Email: info@kke.bz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Khaled Hamad Al-Khalidi Contracting. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

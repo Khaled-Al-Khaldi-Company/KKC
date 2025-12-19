@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Khaled Hamad Al-Khalidi Contracting</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        body {
+            font-family: var(--font-en);
+            direction: ltr;
+        }
+
+        .page-header {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xl);
+        }
+
+        .contact-info-card {
+            background: var(--color-bg-light);
+            padding: var(--spacing-lg);
+            border-radius: 8px;
+            height: 100%;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .info-icon {
+            color: var(--color-secondary);
+            font-size: 1.5rem;
+            margin-right: 15px;
+            /* RTL switch */
+            margin-top: 5px;
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            font-family: var(--font-en);
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-secondary);
+        }
+
+        textarea.form-control {
+            height: 150px;
+            resize: vertical;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span style="color:var(--color-secondary)">KKC</span> Contracting
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="about-en.html">About Us</a></li>
+                    <li><a href="services-en.html">Services</a></li>
+                    <li><a href="projects-en.html">Projects</a></li>
+                    <li><a href="contact-en.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="lang-switch">عربي</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p style="opacity: 0.8;">We are here to answer your inquiries and start successful partnerships</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section style="padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <div class="contact-container">
+
+                <!-- Contact Info & Map -->
+                <div>
+                    <div class="contact-info-card">
+                        <div class="section-title" style="text-align: left; font-size: 1.8rem; margin-bottom: 20px;">
+                            Contact Information</div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <h4>Main Address</h4>
+                                <p>Olaya District, Riyadh<br>Kingdom of Saudi Arabia</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+966 11 000 0000<br>+966 50 000 0000</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@kke.bz<br>fathy@kke.bz</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">🕒</div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Sunday - Thursday: 8:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div>
+                    <div class="section-title" style="text-align: left; font-size: 1.8rem; margin-bottom: 20px;">Send us
+                        a message</div>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name" style="display: block; margin-bottom: 5px;">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" style="display: block; margin-bottom: 5px;">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" style="display: block; margin-bottom: 5px;">Subject / Service</label>
+                            <select id="subject" class="form-control">
+                                <option value="">Select subject...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="contracting">Contracting Request</option>
+                                <option value="maintenance">O & M</option>
+                                <option value="realestate">Real Estate Investment</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" style="display: block; margin-bottom: 5px;">Message</label>
+                            <textarea id="message" class="form-control"
+                                placeholder="Write your details here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Map Placeholder -->
+            <div style="margin-top: var(--spacing-xl); text-align: center;">
+                <div
+                    style="width: 100%; height: 350px; background-color: #eee; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                    <span style="color: #999; font-size: 1.5rem;">Google Maps Placeholder (Embed Code Here)</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About KKC</h3>
+                    <p style="color: #ccc; font-size: 0.9rem;">
+                        Khaled Hamad Al-Khalidi Contracting (KKC) is a leading Saudi company.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index-en.html">Home</a></li>
+                        <li><a href="services-en.html">Services</a></li>
+                        <li><a href="projects-en.html">Projects</a></li>
+                        <li><a href="contact-en.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul style="color: #ccc; font-size: 0.9rem;">
+                        <li>📍 Olaya - Riyadh - KSA</li>
+                        <li>📞 Phone: 920000000</li>
+                        <li>✉️ Email: info@kke.bz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Khaled Hamad Al-Khalidi Contracting. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

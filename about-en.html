@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Khaled Hamad Al-Khalidi Contracting</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        body {
+            font-family: var(--font-en);
+            direction: ltr;
+        }
+
+        .page-header {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+        }
+
+        .about-content {
+            display: flex;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .about-image {
+            flex: 1;
+            height: 400px;
+            background-color: #eee;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .value-card {
+            background: var(--color-bg-light);
+            padding: var(--spacing-lg);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--color-secondary);
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-image {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span style="color:var(--color-secondary)">KKC</span> Contracting
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index-en.html">Home</a></li>
+                    <li><a href="about-en.html" class="active">About Us</a></li>
+                    <li><a href="services-en.html">Services</a></li>
+                    <li><a href="projects-en.html">Projects</a></li>
+                    <li><a href="contact-en.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="about.html" class="lang-switch">عربي</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Us</h1>
+            <p style="opacity: 0.8;">Our story, vision, and values</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section style="padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 style="color: var(--color-primary); margin-bottom: var(--spacing-md);">Who We Are</h2>
+                    <p style="margin-bottom: var(--spacing-md); line-height: 1.8;">
+                        Khaled Hamad Al-Khalidi Contracting Company (KKC) is a national company based in Riyadh,
+                        specializing in General Contracting, Construction, Operation & Maintenance, and Real Estate
+                        Development.
+                    </p>
+                    <p style="margin-bottom: var(--spacing-md); line-height: 1.8;">
+                        Since our establishment, we have been committed to providing high-quality services that meet the
+                        aspirations of our clients in the government and private sectors. We rely on a qualified team of
+                        engineers and technicians, and we use the latest technologies to ensure the accuracy of
+                        execution and speed of completion.
+                    </p>
+                    <p style="line-height: 1.8;">
+                        We strive to be an effective partner in achieving the Kingdom's Vision 2030 by contributing to
+                        the development of infrastructure and urban projects with international standards.
+                    </p>
+                </div>
+                <div class="about-image">
+                    About Image Placeholder
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VMV (Vision, Mission, Values) -->
+    <section style="background-color: var(--color-white); padding: var(--spacing-xl) 0;">
+        <div class="container">
+            <div class="section-title">Our Vision & Mission</div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">👁️</div>
+                    <h3>Our Vision</h3>
+                    <p>To be the leading choice in the contracting and real estate development sector in the Kingdom,
+                        known for quality and reliability.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>Conducting our business with high professionalism, providing innovative solutions, and committing
+                        to the highest safety and quality standards to achieve customer satisfaction.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💎</div>
+                    <h3>Our Values</h3>
+                    <p>Integrity, Quality, Commitment, Innovation, and Safety are the core values that drive our every
+                        action.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About KKC</h3>
+                    <p style="color: #ccc; font-size: 0.9rem;">
+                        Khaled Hamad Al-Khalidi Contracting (KKC) is a leading Saudi company in Construction and O&M.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index-en.html">Home</a></li>
+                        <li><a href="about-en.html">About Us</a></li>
+                        <li><a href="services-en.html">Services</a></li>
+                        <li><a href="contact-en.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul style="color: #ccc; font-size: 0.9rem;">
+                        <li>📍 Olaya - Riyadh - KSA</li>
+                        <li>📞 Phone: 920000000</li>
+                        <li>✉️ Email: info@kke.bz</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Khaled Hamad Al-Khalidi Contracting. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
