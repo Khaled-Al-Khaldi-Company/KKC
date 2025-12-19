@@ -16,20 +16,34 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ========================================
        Mobile Menu Toggle
     ======================================== */
+    /* ========================================
+       Mobile Menu Toggle with Overlay
+    ======================================== */
     const mobileMenuBtn = document.getElementById('mobile-menu');
     const navLinks = document.getElementById('navLinks');
 
+    // Create overlay element dynamically
+    const navOverlay = document.createElement('div');
+    navOverlay.className = 'nav-overlay';
+    document.body.appendChild(navOverlay);
+
     if (mobileMenuBtn && navLinks) {
-        mobileMenuBtn.addEventListener('click', () => {
+        const toggleMenu = () => {
             navLinks.classList.toggle('active');
             mobileMenuBtn.classList.toggle('active');
-        });
+            navOverlay.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        };
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        navOverlay.addEventListener('click', toggleMenu);
 
         // Close menu when clicking on a link
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                mobileMenuBtn.classList.remove('active');
+                if (navLinks.classList.contains('active')) {
+                    toggleMenu();
+                }
             });
         });
     }
