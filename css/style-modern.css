@@ -199,7 +199,7 @@ body {
     right: 0;
     bottom: 0;
     background-color: var(--color-primary-dark);
-    background-image: url('C:/Users/eltor/.gemini/antigravity/brain/bf55b904-eecb-4059-be6e-d8263cb052d2/hero_background_1766147559998.png');
+    background-image: url('../assets/images/hero_background_1766147559998.png');
     background-size: cover;
     background-position: center;
     z-index: 1;
