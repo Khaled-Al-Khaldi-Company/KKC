@@ -3,15 +3,27 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ========================================
        Header Scroll Effect
     ======================================== */
+    /* ========================================
+       Header Scroll Effect
+    ======================================== */
     const header = document.querySelector('.modern-header');
+    const heroSection = document.querySelector('.modern-hero');
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            header.classList.add('scrolled');
+    if (header) {
+        if (heroSection) {
+            // Homepage behavior: Transparent -> White on scroll
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
         } else {
-            header.classList.remove('scrolled');
+            // Subpages behavior: Always White (scrolled style)
+            header.classList.add('scrolled');
         }
-    });
+    }
 
     /* ========================================
        Mobile Menu Toggle
